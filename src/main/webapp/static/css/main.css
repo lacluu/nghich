@@ -1,0 +1,184 @@
+body {
+	background-color: #f9f9f9;
+}
+
+.vcenter {
+	display: inline-block;
+	margin: 20px 0px;
+}
+
+.container-fluid {
+	padding-right: 80px;
+	padding-left: 80px;
+	margin-right: auto;
+	margin-left: 50px;
+	margin-right: auto;
+}
+
+.navbar-left-strong {
+	margin: 30px 0px 50px 0px;
+	color: #323232;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.navbar-left-blue {
+	margin: 0px 0px 20px 0px;
+	font-size: 18px;
+	font-family: "Segoe UI";
+	color: #2F85FA;
+}
+
+.navbar-left-item {
+	margin-top: 10px;
+}
+
+.navbar-left-active {
+	font-family: "Segoe UI";
+	font-size: 14px;
+	font-weight: 600;
+	color: #333333;
+	margin: 10px 0px 10px 0px;
+}
+
+.navbar-left-normal {
+	font-family: "Segoe UI";
+	font-size: 14px;
+	font-weight: 400;
+	color: #666666;
+	margin: 10px 0px 10px 0px;
+}
+
+.hr-su {
+	border-left: 1px solid #ddd;
+	height: 100%;
+	width: 1px;
+	position: absolute;
+	margin-left: 280px;
+	margin-top: 65px;
+	margin-bottom: 0px;
+}
+
+.border-color-gray {
+	border-color: #ddd;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	margin-left: 15px;
+}
+
+.mt-10 {
+	margin-top: 10px;
+}
+
+.mt-30 {
+	margin-top: 30px;
+}
+
+.mr-5 {
+	margin-right: 5px;
+}
+
+.ml-5 {
+	margin-left: 5px;
+}
+
+.ml-10 {
+	margin-left: 10px;
+}
+
+.ml-15 {
+	margin-left: 15px;
+}
+
+.ml-30 {
+	margin-left: 30px;
+}
+
+
+.mb-negative-15 {
+	margin-bottom: -15px;
+}
+
+.mb-20 {
+	margin-bottom: 20px;
+}
+
+.blue-color {
+	color: #028fe1;
+}
+
+.gray-color {
+	color: #bcbcbc;
+}
+
+.h4-cs {
+	margin-top: 20px;
+	font-size: large;
+	color: #888888;
+	font-size: large;
+	margin-bottom: 20px;
+}
+
+.font-segoe-14-semibold {
+	font-family: "Segoe UI";
+	font-size: 14px;
+	font-weight: 600;
+	color: #666666;
+}
+
+.text-number {
+	text-align: right;
+	padding-right: 10px;
+}
+
+.text-date {
+	text-align: center;
+	padding-left: 0px;
+}
+
+.height-70 {
+	height: 70px;
+}
+
+.border-bootom-gray {
+	border-bottom: 1px solid #ddd;
+	
+}
+
+.border-left-gray {
+	border-left: 1px solid #ddd;
+}
+
+#main-content {
+	height: calc(100vh - 80px);
+	padding-left: 50px;
+}
+
+.header-top {
+	margin-left: 50px;
+}
+
+@media only screen and (max-width: 1117px) {
+	#main-content {
+		margin-top: -10px;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	#btn-search {
+		margin-top: 10px;
+	} 
+	
+	.link-reset-search {
+		padding-top: 17px;
+	}
+	
+	.header-top {
+		margin-left: 0px;
+	}
+	
+	.container-fluid {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}

@@ -1,0 +1,156 @@
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 30px;
+	background-color: white;
+	font-family: "Segoe UI";
+	font-size: 14px;
+	font-weight: 600;
+	color: #666666;
+}
+
+th {
+	font-weight: 600;
+}
+
+table, th {
+	border: 1px solid #bebebe;
+	padding: 0px 0px 0px 7px;
+	border: 1px solid #bebebe;
+}
+
+thead tr {
+	height: 32px;
+}
+
+tbody tr {
+	height: 50px;
+}
+
+td {
+	border-left: 1px solid #bebebe;
+	padding: 0px 0px 0px 10px;
+}
+
+#btn-search {
+	width: 100%;
+	background-color: #005ecc;
+	color: white;
+	height: 35px;
+}
+
+.link-reset-search {
+	color: #006efa;
+	margin-top: 7px;
+}
+
+.checkboxDelete {
+	width: 15px;
+	height: 15px;
+}
+
+#navPaging {
+	float: right;
+	margin-top: 10px;
+}
+
+.th-checkbox {
+	width: 3%;
+}
+
+.th-project-number {
+	width: 6%;
+}
+
+.th-project-status {
+	width: 8%;
+}
+
+.th-start-date {
+	width: 8%;
+}
+
+.th-project-customer {
+	width: 30%;
+}
+
+.th-delete {
+	width: 5%;
+}
+
+.th-project-name {
+	width: 40%;
+}
+
+.hr-width {
+	width: 95%;
+	float: left;
+}
+
+.pagination li a {
+	height: 32px;
+}
+
+.icon_delete {
+	color: #d45334;
+}
+
+.form-group {
+	margin-bottom: 0px;
+}
+
+#div-content-top {
+	border-bottom: 1px solid #ddd;
+	margin-left: 15px;
+	padding-left: 0px;
+}
+
+#div-search {
+	padding-top: 20px;
+}
+
+#icon_delete-project {
+	padding-left: 10px;
+	
+}
+
+#icon_delete-project:hover {
+	cursor: pointer; 
+}
+
+#div-delete_multi{
+	cursor: pointer; 
+}
+
+.mt-3 {
+	margin-top: 3px;
+}
+
+#searchStatus option {
+	color: black;
+}
+.page-item .active {
+	background-color:gray;
+}
+
+#div-left-bottom-talble {
+	color: #4bb4f2;
+}
+
+#div-right-bottom-talble {
+	padding-right: 35px;
+	color: #d45334;
+}
+
+#message-no-record {
+	margin-top: 50px; 
+	font-size: 30px
+}
+#div-delete_multi {
+	background-color: #f6f9ff;
+	height: 40px;
+	border-top: 1px solid #bebebe;
+}
+#searchStatus option {
+	color: black;
+}

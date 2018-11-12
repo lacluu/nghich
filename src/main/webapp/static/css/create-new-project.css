@@ -1,0 +1,90 @@
+.hr-width {
+	width: 70.3%;
+	float: left;
+}
+
+.inner-addon {
+	position: relative;
+}
+
+.inner-addon .glyphicon {
+	position: absolute;
+	pointer-events: none;
+	padding: 7px;
+}
+
+.left-addon .glyphicon {
+	left: 0px;
+}
+
+.right-addon .glyphicon {
+	right: 0px;
+}
+
+.left-addon input {
+	padding-left: 30px;
+}
+
+.right-addon input {
+	padding-right: 30px;
+}
+
+.row-form {
+	margin-top: 38px;
+	margin-left: 20px;
+}
+
+.mb-0 {
+	margin-bottom: 0px;
+}
+
+.form-group label {
+	font-family: "Segoe UI";
+	font-size: 14px;
+	font-weight: 600;
+	color: #666666;
+}
+
+.control-label.text-left {
+	text-align: left;
+}
+
+.btn-normal {
+	width: 170px;
+	border-color: #B9B9B9;
+	font-weight: 600;
+	height: 35px;
+}
+
+.btn-normal.blue {
+	width: 170px;
+	background-color: #2F85FA;
+	color: white;
+}
+
+.icon-color-gray {
+	color: gray;
+}
+
+.alert-custom {
+	width: 70.5%;
+	display: none;
+	margin-left: 15px;
+}
+
+#hb-memebers {
+	margin-left: 10px;
+}
+
+.help-block {
+	display: none;
+}
+
+.div-end-date {
+	margin-right: 36px;
+}
+
+.h4-cs {
+	margin-top: 20px;
+	margin-bottom: 0px;
+}

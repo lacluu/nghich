@@ -1,0 +1,54 @@
+/*
+ * TaskAuditService
+ * 
+ * Project: Training
+ * 
+ * Copyright 2015 by ELCA
+ * All rights reserved.
+ *
+ * This software is the confidential and proprietary information
+ * of ELCA. ("Confidential Information"). You
+ * shall not disclose such Confidential Information and shall
+ * use it only in accordance with the terms of the license
+ * agreement you entered into with ELCA.
+ */
+package vn.elca.training.service;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
+
+import vn.elca.training.dao.ITaskAuditRepository;
+import vn.elca.training.dom.Task;
+import vn.elca.training.dom.TaskAudit;
+import vn.elca.training.dom.TaskAudit.AuditType;
+import vn.elca.training.dom.TaskAudit.Status;
+
+/**
+ * @author vlp
+ *
+ */
+@Service
+@Transactional(noRollbackFor = Exception.class, propagation = Propagation.REQUIRES_NEW)
+public class AuditServiceImpl implements AuditService {
+    private Log logger = LogFactory.getLog(getClass());
+    @Autowired
+    private ITaskAuditRepository taskAuditRepository;
+
+    @Override
+    public void saveAuditDataForTask(Task task, AuditType auditType, Status status, String message) {
+        try {
+            TaskAudit taskAudit = new TaskAudit(task, auditType, status, message);
+            taskAuditRepository.save(taskAudit);
+        } catch (Exception e) {
+            // it's OK to log exception here because this is only audit data, it contains information for tracing error
+            // not business.
+            logger.error("Can't " + auditType.name().toLowerCase() + " audit data for Task with Name " + task.getName(),
+                    e);
+           
+        }
+    }
+}
